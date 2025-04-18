@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+requests
+beautifulsoup4
+yfinance
+python-dotenv
+httpx
