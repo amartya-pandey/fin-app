@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Screener from "./pages/Screener";
 import AIChat from "./pages/AIChat";
 import FiftyTwoWeek from './pages/FiftyTwoWeek'
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 
 <Route path="/52week" element={<FiftyTwoWeek />} />
 export default function App() {
@@ -17,9 +19,14 @@ export default function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Screener />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+        {/* <Route path="/" element={<Screener />} /> */}
         <Route path="/ai" element={<AIChat />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
